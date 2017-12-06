@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulacija</title>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="audio.css">
+</head>
+<body>
+    <div class="audio_player">
+		<div class="player_border">
+			<div class="img_and_songs_wrapper">
+				<div class="img_holder">
+
+				</div>
+				<div class="songs_holder">
+
+				</div>
+			</div>
+			<div id="seeker_holder">
+				<input id="seekslider" type="range" min="0" max="100" value="0" step="1">
+                <span id="curtimetext">00:00</span><span id="timeslash">/</span><span id="durtimetext">00:00</span>
+			</div>
+			<div class="button_holder">
+				<button id="play" class="button play button_focus">
+					<div class="play_sign_holder">
+						<span class="play_sign">&#916;</span>
+					</div>
+				</button>
+				<button class="button pause button_focus">
+					<div>||</div>
+				</button>
+				<button class="button stop button_focus">
+					<div class="stop_sign"></div>
+				</button>
+				<button id="next" class="button next">
+					<div class="next_sign_holder">
+						<span class="next_sign">&gt;</span>
+					</div>
+				</button>
+				<button id="prev" class="button prev">
+					<div class="prev_sign_holder">
+						<span class="prev_sign">&lt;</span>
+					</div>
+				</button>
+				<button class="button mute">mute</button>
+				<div class="sound_icon_holder"><img class="sound_icon" src="" alt=""></div><input class="volume_slider" type="range" min="0" max="10" value="119" step="1">
+			</div>
+		</div>
+	</div>
+    <footer>
+        <div class="copyrights_holder">
+            <p>&copy; 2017. { <a href="https://skolakoda.org/" target="_blank">skolakoda.org</a> }</p><p>best to listen in Firefox</p>
+        </div>
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script src="audio.js"></script>
+</body>
+</html>

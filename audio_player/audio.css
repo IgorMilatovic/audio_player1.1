@@ -1,0 +1,181 @@
+
+body {
+	box-sizing: border-box;
+	background: rgb(38, 39, 52);
+}
+
+a {
+	text-decoration: none;
+	color: lightblue;
+}
+
+a:hover {
+	text-decoration: none;
+	color: darkgray;
+	text-shadow: 0 0 1px whitesmoke;
+}
+
+.audio_player {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	padding:10px !important;
+	width: 665px;
+	background: #200202;
+	border-radius: 18px;
+	padding: 0 10px;
+	margin: 150px auto;
+}
+
+.player_border {
+	border: 1px solid rgba(225, 226, 241, 1);
+	border-radius: 12px;
+	padding: 10px;
+	box-shadow: 0 0 282px 65px rgb(225, 226, 241);
+}
+
+.img_and_songs_wrapper {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.img_holder {
+	width: 300px;
+	height: 370px;
+	border: 1px solid black;
+	margin: 5px;
+	background: #6b746f;
+}
+
+.songs_holder {
+	color: whitesmoke;
+	width: 300px;
+	height: 370px;
+	border: 1px solid black;
+	margin: 5px;
+	background: #6b746f;
+	overflow: auto;
+}
+
+.songs_holder p {
+	margin-left: 10px;
+	padding: 2px;
+	border-radius: 2px;
+}
+
+#seekslider {
+	width: 427px;
+	background: lightyellow;
+	border: 1px solid white;
+	border-radius: 7px;
+	height: 5px;
+	margin:10px 0 0 20px;
+}
+
+#curtimetext, #durtimetext, #timeslash {
+	color: whitesmoke;
+	margin-left: 5px;
+}
+
+.button_holder {
+	display: flex;
+	justify-content: space-around;
+	width: 620px;
+	margin: 12px 10px 12px 19px;
+	align-items: center;
+}
+
+.button {
+	width: 70px;
+	height: 22px;
+	border: 1px solid black;
+	border-radius: 50px;
+	margin-right: 20px;
+	background: lightgray;
+}
+
+.play_sign_holder {
+	transform: rotate(90deg);
+	margin-top: -2px;
+	margin-left: 2px;
+}
+
+.play_sign {
+	font-size: 20px;
+}
+
+.stop_sign {
+	height: 10px;
+	width: 10px;
+	border: 2px solid black;
+	margin: auto auto;
+}
+
+.mute {
+	width: 70px;
+}
+
+.button_txt_play {
+	margin-left: -4px;
+}
+
+.button_txt_stop {
+	margin-top: 7px;
+    margin-left: -3px;
+}
+
+.button_txt_pause {
+	margin-top: 7px;
+    margin-left: -8px;
+}
+
+.play_button_colour {
+	background: lightgreen;
+}
+
+.pause_button_colour {
+    background: yellow;
+}
+
+.stop_button_colour {
+    background: #ff4d4d;
+}
+
+.mute_button_colour {
+    background: darkorange;
+}
+
+.prev_next {
+	background: darkorange;
+}
+
+.sound_icon_holder {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.sound_icon {
+	width: 75%;
+	height: auto;
+	background: lightgray;
+	padding: 2px;
+	border-radius: 50px;
+}
+
+.playing_song {
+	background: rgb(48, 48, 48);
+}
+
+:focus {
+    outline: none;
+}
+
+.copyrights_holder {
+	color: whitesmoke;
+	font-size: 20px;
+	text-align: center;
+}
